@@ -1,1 +1,12 @@
-{"name":"SAKEZ Solusi Indonesia","short_name":"SAKEZ","start_url":"/","display":"standalone","background_color":"#071A15","theme_color":"#071A15"}
+{
+  "name": "SAKEZ Solusi Indonesia",
+  "short_name": "SAKEZ",
+  "description": "Mitra solusi terintegrasi — data center, keamanan, aplikasi, ERP Odoo, dan sistem operasional.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#071A15",
+  "theme_color": "#071A15",
+  "lang": "id",
+  "icons": []
+}
