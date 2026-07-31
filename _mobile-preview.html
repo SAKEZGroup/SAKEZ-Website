@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html,body{margin:0;background:#222;display:flex;justify-content:center;}
+  .phone{width:390px;height:2600px;border:0;background:#071A15;}
+</style>
+</head>
+<body>
+<iframe class="phone" src="index.html" id="f"></iframe>
+<script>
+  const f=document.getElementById('f');
+  f.addEventListener('load',()=>{
+    try{ f.contentWindow.location.hash='#layanan'; }catch(e){}
+  });
+</script>
+</body>
+</html>

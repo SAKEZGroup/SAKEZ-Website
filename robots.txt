@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sakezgroup.com/sitemap.xml
+Sitemap: https://solusi.sakezgroup.com/sitemap.xml
