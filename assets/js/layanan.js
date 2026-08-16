@@ -28,3 +28,5 @@ copyright:"© 2026 SAKEZ Solusi Indonesia. Part of SAKEZ Group."
   let saved='id'; try{saved=localStorage.getItem('sakez_lang')||'id';}catch(e){}
   apply(saved);
 })();
+/* GA4 lead tracking: fire generate_lead on any email click */
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="mailto:"]');if(a){try{if(typeof gtag==='function')gtag('event','generate_lead',{currency:'IDR',value:0,method:'email'});}catch(err){}}},true);
