@@ -6,7 +6,7 @@ bcHome:"Home", bcLayanan:"Services",
 backAll:"All Services", relTitle:"Other Services",
 scopeH:"Scope of Work", procH:"How We Work", whyH:"Why SAKEZ", faqH:"Frequently Asked Questions",
 ctaTitle:"Let\u2019s Build Your Solution", ctaSub:"Let's build your solution.",
-ctaBtn:"Consult via WhatsApp", phoneLabel:"Phone / WA",
+ctaBtn:"Email Us", phoneLabel:"Phone / WA",
 copyright:"© 2026 SAKEZ Solusi Indonesia. Part of SAKEZ Group."
 };
 (function(){
