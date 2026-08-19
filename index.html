@@ -218,22 +218,77 @@
 </div>
 <a href="mailto:info@sakezgroup.com" style="font-family:'Jost',sans-serif; font-weight:500; font-size:17px; letter-spacing:0.04em; color:#071A15; background:linear-gradient(135deg,#34D8A6,#10B981); padding:19px 42px; border-radius:8px; margin-top:6px;" data-i18n="contactCta">Email Kami</a>
 
-<form id="lead-form" style="position:relative; width:100%; max-width:600px; margin-top:14px; display:grid; grid-template-columns:1fr 1fr; gap:16px; text-align:left; background:rgba(255,255,255,0.03); border:1px solid rgba(16,185,129,0.22); border-radius:14px; padding:30px clamp(20px,4vw,34px);">
+<form id="lead-form" novalidate style="position:relative; width:100%; max-width:600px; margin-top:14px; display:grid; grid-template-columns:1fr 1fr; gap:16px; text-align:left; background:rgba(255,255,255,0.03); border:1px solid rgba(16,185,129,0.22); border-radius:14px; padding:30px clamp(20px,4vw,34px);">
 <p style="grid-column:1 / -1; margin:0 0 4px; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:22px; color:#F1FBF6;" data-i18n="formTitle">Kirim Kebutuhan Anda</p>
-<div><label for="lf-nama" style="font-family:'Jost',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#6EE7C8; margin-bottom:8px; display:block; text-align:left;" data-i18n="formNama">Nama</label><input id="lf-nama" name="nama" type="text" required style="font-family:'Jost',sans-serif; font-weight:300; font-size:16px; color:#F1FBF6; background:rgba(255,255,255,0.04); border:1px solid rgba(16,185,129,0.28); border-radius:8px; padding:14px 16px; width:100%; box-sizing:border-box;"></div>
-<div><label for="lf-perusahaan" style="font-family:'Jost',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#6EE7C8; margin-bottom:8px; display:block; text-align:left;" data-i18n="formPerusahaan">Perusahaan</label><input id="lf-perusahaan" name="perusahaan" type="text" style="font-family:'Jost',sans-serif; font-weight:300; font-size:16px; color:#F1FBF6; background:rgba(255,255,255,0.04); border:1px solid rgba(16,185,129,0.28); border-radius:8px; padding:14px 16px; width:100%; box-sizing:border-box;"></div>
-<div><label for="lf-email" style="font-family:'Jost',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#6EE7C8; margin-bottom:8px; display:block; text-align:left;" data-i18n="formEmail">Email</label><input id="lf-email" name="email" type="email" style="font-family:'Jost',sans-serif; font-weight:300; font-size:16px; color:#F1FBF6; background:rgba(255,255,255,0.04); border:1px solid rgba(16,185,129,0.28); border-radius:8px; padding:14px 16px; width:100%; box-sizing:border-box;"></div>
-<div><label for="lf-telp" style="font-family:'Jost',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#6EE7C8; margin-bottom:8px; display:block; text-align:left;" data-i18n="formTelp">No. WhatsApp</label><input id="lf-telp" name="telp" type="tel" style="font-family:'Jost',sans-serif; font-weight:300; font-size:16px; color:#F1FBF6; background:rgba(255,255,255,0.04); border:1px solid rgba(16,185,129,0.28); border-radius:8px; padding:14px 16px; width:100%; box-sizing:border-box;"></div>
-<div style="grid-column:1 / -1;"><label for="lf-layanan" style="font-family:'Jost',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#6EE7C8; margin-bottom:8px; display:block; text-align:left;" data-i18n="formLayanan">Layanan yang diminati</label><select id="lf-layanan" name="layanan" style="font-family:'Jost',sans-serif; font-weight:300; font-size:16px; color:#F1FBF6; background:rgba(255,255,255,0.04); border:1px solid rgba(16,185,129,0.28); border-radius:8px; padding:14px 16px; width:100%; box-sizing:border-box;">
-<option>Pembangunan Data Center &amp; DRC</option><option>Security &amp; Surveillance (CCTV &amp; Access Control)</option><option>Smart Locker IoT</option><option>Pengembangan Aplikasi Web &amp; Mobile</option><option>Implementasi ERP Odoo</option><option>Integrasi HRIS</option><option>Sistem Internal / Solusi Khusus</option><option>Lainnya</option></select></div>
-<div style="grid-column:1 / -1;"><label for="lf-pesan" style="font-family:'Jost',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#6EE7C8; margin-bottom:8px; display:block; text-align:left;" data-i18n="formPesan">Pesan</label><textarea id="lf-pesan" name="pesan" rows="3" style="font-family:'Jost',sans-serif; font-weight:300; font-size:16px; color:#F1FBF6; background:rgba(255,255,255,0.04); border:1px solid rgba(16,185,129,0.28); border-radius:8px; padding:14px 16px; width:100%; box-sizing:border-box;resize:vertical;"></textarea></div>
-<button type="submit" style="grid-column:1 / -1; font-family:'Jost',sans-serif; font-weight:500; font-size:16px; letter-spacing:0.04em; color:#071A15; background:linear-gradient(135deg,#34D8A6,#10B981); border:0; padding:16px 20px; border-radius:8px; cursor:pointer;" data-i18n="formKirim">Kirim via WhatsApp</button>
+<div><label for="lf-nama" style="font-family:'Jost',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#6EE7C8; margin-bottom:8px; display:block; text-align:left;" data-i18n="formNama">Nama</label><input id="lf-nama" name="nama" type="text" required style="font-family:'Jost',sans-serif; font-weight:300; font-size:16px; color:#F1FBF6; background:rgba(255,255,255,0.04); border:1px solid rgba(16,185,129,0.28); border-radius:8px; padding:14px 16px; width:100%; box-sizing:border-box;"><small class="lf-err" data-for="lf-nama" style="display:none; font-family:'Jost',sans-serif; font-size:12px; color:#FCA5A5; margin-top:6px;"></small></div>
+<div><label for="lf-perusahaan" style="font-family:'Jost',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#6EE7C8; margin-bottom:8px; display:block; text-align:left;" data-i18n="formPerusahaan">Perusahaan / Instansi</label><input id="lf-perusahaan" name="perusahaan" type="text" required style="font-family:'Jost',sans-serif; font-weight:300; font-size:16px; color:#F1FBF6; background:rgba(255,255,255,0.04); border:1px solid rgba(16,185,129,0.28); border-radius:8px; padding:14px 16px; width:100%; box-sizing:border-box;"><small class="lf-err" data-for="lf-perusahaan" style="display:none; font-family:'Jost',sans-serif; font-size:12px; color:#FCA5A5; margin-top:6px;"></small></div>
+<div style="grid-column:1 / -1;"><label for="lf-kebutuhan" style="font-family:'Jost',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#6EE7C8; margin-bottom:8px; display:block; text-align:left;" data-i18n="formKebutuhan">Kebutuhan</label><select id="lf-kebutuhan" name="kebutuhan" required style="font-family:'Jost',sans-serif; font-weight:300; font-size:16px; color:#F1FBF6; background:rgba(255,255,255,0.04); border:1px solid rgba(16,185,129,0.28); border-radius:8px; padding:14px 16px; width:100%; box-sizing:border-box;">
+<option value="" disabled selected data-i18n="formKebutuhanPh">— Pilih kebutuhan —</option><option>Konstruksi &amp; Interior</option><option>IT &amp; Konsultan</option><option>Penyediaan Tenaga Kerja</option><option>Lainnya</option></select><small class="lf-err" data-for="lf-kebutuhan" style="display:none; font-family:'Jost',sans-serif; font-size:12px; color:#FCA5A5; margin-top:6px;"></small></div>
+<div style="grid-column:1 / -1;"><label for="lf-kontak" style="font-family:'Jost',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#6EE7C8; margin-bottom:8px; display:block; text-align:left;" data-i18n="formKontak">Kontak — WhatsApp / Email</label><input id="lf-kontak" name="kontak" type="text" required style="font-family:'Jost',sans-serif; font-weight:300; font-size:16px; color:#F1FBF6; background:rgba(255,255,255,0.04); border:1px solid rgba(16,185,129,0.28); border-radius:8px; padding:14px 16px; width:100%; box-sizing:border-box;"><small class="lf-err" data-for="lf-kontak" style="display:none; font-family:'Jost',sans-serif; font-size:12px; color:#FCA5A5; margin-top:6px;"></small></div>
+<div style="grid-column:1 / -1;"><label for="lf-pesan" style="font-family:'Jost',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#6EE7C8; margin-bottom:8px; display:block; text-align:left;" data-i18n="formPesan">Pesan (opsional)</label><textarea id="lf-pesan" name="pesan" rows="3" style="font-family:'Jost',sans-serif; font-weight:300; font-size:16px; color:#F1FBF6; background:rgba(255,255,255,0.04); border:1px solid rgba(16,185,129,0.28); border-radius:8px; padding:14px 16px; width:100%; box-sizing:border-box;resize:vertical;"></textarea></div>
+<input type="checkbox" name="botcheck" id="lf-botcheck" tabindex="-1" autocomplete="off" style="display:none;">
+<div id="lf-buttons" style="grid-column:1 / -1; display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+<button type="button" id="lf-btn-wa" data-channel="whatsapp" style="font-family:'Jost',sans-serif; font-weight:500; font-size:16px; letter-spacing:0.04em; color:#071A15; background:linear-gradient(135deg,#34D8A6,#10B981); border:0; padding:16px 20px; border-radius:8px; cursor:pointer;" data-i18n="formWa">Lanjut Chat via WhatsApp</button>
+<button type="button" id="lf-btn-email" data-channel="email" style="font-family:'Jost',sans-serif; font-weight:500; font-size:16px; letter-spacing:0.04em; color:#F1FBF6; background:rgba(255,255,255,0.05); border:1px solid rgba(16,185,129,0.5); padding:16px 20px; border-radius:8px; cursor:pointer;" data-i18n="formEmailBtn">Kirim via Email</button>
+</div>
+<p id="lf-status" role="status" style="grid-column:1 / -1; margin:0; display:none; font-family:'Jost',sans-serif; font-size:15px; line-height:1.5;"></p>
 </form>
 <script>
-(function(){function ev(method){try{if(typeof gtag==='function')gtag('event','generate_lead',{currency:'IDR',value:0,method:method});}catch(e){}}
+(function(){
+var APPS_SCRIPT_URL="URL_WEB_APP_APPS_SCRIPT_KAMU";
+var SECRET_TOKEN="token-rahasia-panjang";
+var WA_NUMBER="6285280089533";
+var SOURCE_SITE="solusi";
+var FALLBACK_EMAIL="info@sakezgroup.com";
 function bind(){
-  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="mailto:"]');if(a)ev('email');},true);
-  var f=document.getElementById('lead-form');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var g=function(id){var el=document.getElementById(id);return el?el.value.trim():'';};ev('form_whatsapp');var msg='Halo SAKEZ Solusi Indonesia, saya ingin berkonsultasi.'+'\n\nNama: '+g('lf-nama')+'\nPerusahaan: '+(g('lf-perusahaan')||'-')+'\nEmail: '+(g('lf-email')||'-')+'\nNo. WhatsApp: '+(g('lf-telp')||'-')+'\nLayanan: '+g('lf-layanan')+'\nPesan: '+(g('lf-pesan')||'-');window.open('https://wa.me/6285280089533?text='+encodeURIComponent(msg),'_blank');});}
+  var f=document.getElementById('lead-form');if(!f)return;
+  var btnWa=document.getElementById('lf-btn-wa'),btnEmail=document.getElementById('lf-btn-email');
+  var status=document.getElementById('lf-status');
+  var required=['lf-nama','lf-perusahaan','lf-kebutuhan','lf-kontak'];
+  function g(id){var el=document.getElementById(id);return el?String(el.value||'').trim():'';}
+  function qp(k){try{return new URLSearchParams(location.search).get(k)||'';}catch(e){return '';}}
+  function clearErr(){f.querySelectorAll('.lf-err').forEach(function(s){s.style.display='none';s.textContent='';});}
+  function showErr(id,msg){var s=f.querySelector('.lf-err[data-for="'+id+'"]');if(s){s.textContent=msg;s.style.display='block';}}
+  function setLoading(on,active){[btnWa,btnEmail].forEach(function(b){b.disabled=on;b.style.opacity=on?'0.55':'1';b.style.cursor=on?'not-allowed':'pointer';});
+    if(on&&active){active.textContent=active.getAttribute('data-loading')||'Memproses…';}}
+  function validate(){clearErr();var ok=true;required.forEach(function(id){if(!g(id)){showErr(id,'Wajib diisi.');ok=false;}});return ok;}
+  function submit(channel,btn){
+    if(!validate())return;
+    var labelWa=btnWa.textContent,labelEmail=btnEmail.textContent;
+    btn.setAttribute('data-loading','Memproses…');
+    setLoading(true,btn);
+    status.style.display='none';
+    var nama=g('lf-nama'),perusahaan=g('lf-perusahaan'),kebutuhan=g('lf-kebutuhan'),kontak=g('lf-kontak'),pesan=g('lf-pesan');
+    var bot=document.getElementById('lf-botcheck');
+    var payload={token:SECRET_TOKEN,source_site:SOURCE_SITE,channel:channel,nama:nama,perusahaan:perusahaan,kebutuhan:kebutuhan,kontak:kontak,pesan:pesan,page_url:location.href,referrer:document.referrer,utm_source:qp('utm_source'),utm_medium:qp('utm_medium'),utm_campaign:qp('utm_campaign'),botcheck:(bot&&bot.checked?'1':'')};
+    var done=function(){try{if(typeof gtag==='function')gtag('event','generate_lead',{lead_channel:channel,source_site:SOURCE_SITE,business_line:kebutuhan});}catch(e){}
+      if(channel==='whatsapp'){
+        var pesanPrefilled='Halo SAKEZ, saya '+nama+' dari '+perusahaan+'. Saya tertarik: '+kebutuhan+'.'+(pesan?' '+pesan:'');
+        location.href='https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(pesanPrefilled);
+      }else{
+        status.style.color='#6EE7C8';status.style.display='block';
+        status.textContent='Terima kasih, pesan Anda sudah kami terima. Tim kami akan menghubungi Anda.';
+        f.reset();setLoading(false,btn);btnWa.textContent=labelWa;btnEmail.textContent=labelEmail;
+      }};
+    var fail=function(){try{if(typeof gtag==='function')gtag('event','generate_lead',{lead_channel:channel,source_site:SOURCE_SITE,business_line:kebutuhan});}catch(e){}
+      if(channel==='whatsapp'){
+        var pesanPrefilled='Halo SAKEZ, saya '+nama+' dari '+perusahaan+'. Saya tertarik: '+kebutuhan+'.'+(pesan?' '+pesan:'');
+        location.href='https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(pesanPrefilled);
+      }else{
+        var body='Nama: '+nama+'%0D%0APerusahaan: '+perusahaan+'%0D%0AKebutuhan: '+kebutuhan+'%0D%0AKontak: '+kontak+'%0D%0APesan: '+(pesan||'-');
+        var mailto='mailto:'+FALLBACK_EMAIL+'?subject='+encodeURIComponent('Permintaan dari '+nama+' ('+perusahaan+')')+'&body='+body;
+        status.style.color='#FCA5A5';status.style.display='block';status.innerHTML='';
+        var span=document.createElement('span');span.textContent='Pengiriman gagal. Silakan kirim langsung via email: ';
+        var a=document.createElement('a');a.href=mailto;a.textContent='buka email';a.style.color='#34D8A6';a.style.textDecoration='underline';
+        status.appendChild(span);status.appendChild(a);
+        setLoading(false,btn);btnWa.textContent=labelWa;btnEmail.textContent=labelEmail;
+      }};
+    fetch(APPS_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)}).then(done).catch(fail);
+  }
+  btnWa.addEventListener('click',function(){submit('whatsapp',btnWa);});
+  btnEmail.addEventListener('click',function(){submit('email',btnEmail);});
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="mailto:"]');if(a){try{if(typeof gtag==='function')gtag('event','generate_lead',{lead_channel:'email',source_site:SOURCE_SITE,business_line:'-'});}catch(err){}}},true);
+}
 if(document.readyState!=='loading')bind();else document.addEventListener('DOMContentLoaded',bind);})();
 </script>
 <div style="display:flex; gap:50px; flex-wrap:wrap; justify-content:center; margin-top:24px;">
@@ -244,5 +299,5 @@ if(document.readyState!=='loading')bind();else document.addEventListener('DOMCon
 <p style="position:relative; margin:60px 0 0; font-family:'Jost',sans-serif; font-weight:400; font-size:14px; color:#55806F;" data-i18n="copyright">© 2026 SAKEZ Solusi Indonesia. Bagian dari SAKEZ Group.</p>
 <p style="position:relative; margin:12px 0 0; font-family:'Jost',sans-serif; font-weight:400; font-size:14px;"><a href="https://sakezgroup.com/" style="color:#6EE7C8; text-decoration:none; letter-spacing:0.04em;" data-i18n="backlinkGroup">Kunjungi induk perusahaan &rarr; SAKEZ Group</a></p>
 </section>
-</main><script defer="defer" src="assets/js/main.js?v=20260816d"></script></body>
+</main><script defer="defer" src="assets/js/main.js?v=20260816e"></script></body>
 </html>

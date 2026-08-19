@@ -62,8 +62,9 @@ why4t:"Continuous Support", why4d:"Long-term maintenance and guidance.",
 contactTitle:"Let\u2019s Build<br/>Your Solution", contactSub:"Let's build your solution.",
 contactCta:"Email Us", phoneLabel:"Phone / WA",
 copyright:"© 2026 SAKEZ Solusi Indonesia. Part of SAKEZ Group.",
-formTitle:"Send Us Your Needs", formNama:"Name", formPerusahaan:"Company", formEmail:"Email",
-formTelp:"WhatsApp No.", formLayanan:"Service of interest", formPesan:"Message", formKirim:"Send via WhatsApp",
+formTitle:"Send Us Your Needs", formNama:"Name", formPerusahaan:"Company / Institution",
+formKebutuhan:"Requirement", formKebutuhanPh:"— Select requirement —", formKontak:"Contact — WhatsApp / Email",
+formPesan:"Message (optional)", formWa:"Continue via WhatsApp", formEmailBtn:"Send via Email",
 backlinkGroup:"Visit our parent company \u2192 SAKEZ Group"
 };
 
